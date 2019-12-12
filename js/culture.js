@@ -11,7 +11,7 @@ $(document).ready(function () {
             console.log(scrollY);
 
             $(".fade").each(function () {
-                if (scrollY > $(this).offset().top - 800) $(this).stop().animate({
+                if (scrollY > $(this).offset().top - 600) $(this).stop().animate({
                     opacity: 1,
                     '-ms-filter': '"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"',
                     top: 0
