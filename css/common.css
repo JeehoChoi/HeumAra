@@ -58,7 +58,7 @@ header, nav, section, article, footer{display: block;}
 
 /* header */
 button{margin: 0;padding: 0;border: none;background: none;cursor: pointer;}
-.headerwrap{min-width: 1660px;height: 76px;}
+.headerwrap{height: 76px;}
 #gnb{width: 70%;margin: 0 auto;}
 #gnb > ul > li + li{margin-left: 100px;}
 
@@ -83,7 +83,7 @@ button{margin: 0;padding: 0;border: none;background: none;cursor: pointer;}
 body{font-family: s-core;font-weight: 300;font-size:18px;color: #555;letter-spacing: 4px;}
 
 /* header */
-.headerwrap{position:fixed;top:0;left:0;width:100%;min-width:1910px;overflow: hidden;z-index:8888;transition:top 0.6s;}
+.headerwrap{position:fixed;top:0;left:0;width:100%;overflow: hidden;z-index:8888;transition:top 0.6s;}
 .headerwrap.hide{top:-80px;}
 #header{font-weight: 300;top: 0;left: 0;width: 100%;height: 76px;background: #2e332d;}
 .logo {padding: 0px 71px;}
@@ -106,13 +106,17 @@ body{font-family: s-core;font-weight: 300;font-size:18px;color: #555;letter-spac
 #gnb ul li a:hover, #gnb ul li a:focus{color:#ffb400; font-weight: 400;}
 
 /* footer */
-#footer{position: relative;width: 100%;height: 150px;border-top: 1px solid #aaa;margin: 0 auto;padding-bottom: 80px;color: #ED9C63;letter-spacing: 3px;font-size: 15px;background: #2e332d;}
-.footer_logo{left: 250px;top: 100px;width: 925px;height: 70px;vertical-align: middle;}
-.footer_logo a{width: 175px;height: 50px;}
+#footer{position: relative;width: 100%;height: 150px;margin: 0 auto;padding-bottom: 80px;color: #ED9C63;letter-spacing: 3px;font-size: 15px;background: #2e332d;}
+.footer_logo{left: 150px;top: 100px;width: 920px;height: 70px;}
+.footer_logo a{width: 175px;height: 50px;vertical-align: middle;}
 .footer_logo div{width: 665px;}
 .footer_logo div p{padding-top: 15px;}
-.footer_link{right: 250px;top: 100px;text-align: right;}
+.footer_link{right: 150px;top: 100px;text-align: right;}
 .footer_link p a{font-weight: 500;}
 .footer_link ul{padding-top: 15px;}
 .footer_link ul li:first-child{padding-right: 20px;border-right: 2px solid #ED9C63;}
 .footer_link ul li:last-child{padding-left: 20px;}
+
+/* 마지막 인디케이터(푸터)가 보여지지 않도록 */
+#fp-nav ul li:last-child{display: none;}
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip{background: #333;padding: 2px 10px;;}

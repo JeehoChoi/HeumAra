@@ -2,7 +2,7 @@
 #cultureBg{position: relative;width: 100%;min-height: 100vh;height: 100%;background: url("../images/culture/culture_bg.jpg") no-repeat center top;}
 #cultureBg h2{position: absolute;width: 1090px;height: 256px;line-height: 270px;top: 540px;right: 0;font-family: CaviarDreams;font-size: 150px;letter-spacing: 30px;color: #ED9C63;font-weight: 400;background: rgba(47, 51, 45, 0.7);padding-left: 50px;}
 
-#content{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;min-width: 1400px;max-width: 1900px;margin: 0 auto;}
+#content{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;min-width: 1400px;max-width: 1920px;margin: 0 auto;}
 #exhibition, #performance, #movie{width: 100%;min-height: 100vh;height: 100%;}
 
 /* 공통 클래스 */
@@ -20,7 +20,7 @@
 .poster.f_l{margin-right: 30px;}
 .poster.f_r{margin-left: 30px;}
 .fade{top: 40px;}
-.txt{height: 450px;margin-top: 25px;}/* height: 471px */
+.txt{height: 450px;margin-top: 20px;}/* height: 471px */
 .txt h5{font-size: 35px; font-weight: 400;}
 .txt p{padding: 30px 0 30px;line-height: 1.6;}
 .txt strong:after{content: "";position: absolute;top: 22px;right: -35px;width: 55px;height: 2px;background: #555;transform: rotate(-45deg);}
@@ -33,8 +33,14 @@
 
 
 /* cube transform */
-.cube_cover{width: 540px;height: 250px;margin-left: 260px;margin-top: 50px;}
-.cube_cover.f_r{margin: 50px 260px 0 0;}
+.cube_cover{width: 540px;height: 250px;margin-left: 233px;margin-top: 50px;}/* margin-left: 260px; => 233 */
+.cube_cover.f_r{margin: 50px 233px 0 0;}
+
+@media all and (max-width: 1680px) {
+  .cube_cover{margin-left: 113px;}
+  .cube_cover.f_r{margin-right: 112px;}
+}
+
 .img_box{width: 250px;height: 250px;perspective: 1000px;backface-visibility: hidden;}
 .img_box.mr_40{margin-right: 40px;}
 .img_box.ml_40{margin-left: 40px;}
@@ -55,3 +61,15 @@
 
 #movie .visual{left: 0;background-image: url("../images/culture/movie_main.jpg");}
 #movie .cnt{margin-left: 50%;padding-right: 0;}
+
+/* 
+<a href="">| MORE |</a> 이런 장식은 가상요소로 제작하지.....
+
+<div class="cube_cover f_r p_r fade">
+해상도가 작아지면 오른쪽에서 260이나 띄우기 때문에 왼쪽 공간으로 넘어갑니다
+
+#cnt2 #photo img:nth-child(3){bottom: 0;left: 70px;} 단위 누락됨
+
+alt에 필요없는 문자 지우기
+날개.파티전 포스터 작품 => 날개.파티전 포스터
+*/
