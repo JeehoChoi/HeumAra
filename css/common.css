@@ -3,41 +3,45 @@
   font-family: s-core;
   src: url("../fonts/SCDream2.eot");
   src: local("※"),
-  url("../fonts/SCDream2.woff")format("woff"),
-  url("../fonts/SCDream2.otf")format("opentype"),
-  url("../fonts/SCDream2.ttf")format("truetype");
+  url("../fonts/SCDream2.woff") format("woff"),
+  url("../fonts/SCDream2.ttf") format("truetype");
   font-weight: 200;
 }
 @font-face {
   font-family: s-core;
   src: url("../fonts/SCDream3.eot");
   src: local("※"),
-  url("../fonts/SCDream3.woff")format("woff"),
-  url("../fonts/SCDream3.otf")format("opentype"),
-  url("../fonts/SCDream3.ttf")format("truetype");
+  url("../fonts/SCDream3.woff") format("woff"),
+  url("../fonts/SCDream3.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: s-core;
   src: url("../fonts/SCDream4.eot");
   src: local("※"),
-  url("../fonts/SCDream4.woff")format("woff"),
-  url("../fonts/SCDream4.otf")format("opentype"),
-  url("../fonts/SCDream4.ttf")format("truetype");
+  url("../fonts/SCDream4.woff") format("woff"),
+  url("../fonts/SCDream4.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: s-core;
   src: url("../fonts/SCDream5.eot");
   src: local("※"),
-  url("../fonts/SCDream5.woff")format("woff"),
-  url("../fonts/SCDream5.otf")format("opentype"),
-  url("../fonts/SCDream5.ttf")format("truetype");
+  url("../fonts/SCDream5.woff") format("woff"),
+  url("../fonts/SCDream5.ttf") format("truetype");
   font-weight: 500;
 }
+@font-face {
+  font-family: calDream;
+  src: url("../fonts/CaviarDreams.eot");
+  src: local("❅"),
+       url("../fonts/CaviarDreams.woff") format("woff"),
+       url("../fonts/CaviarDreams.ttf") format("truetype");
+}
+
 
 /* tag reset */
-body, h1, h2, h3, h4, h5, h6, ul, p{margin: 0;padding: 0;}
+body, h1, h2, h3, h4, h5, h6, ul, p, button{margin: 0;padding: 0;}
 h1, h2, h3, h4, h5, h6{font-size: inherit;}
 ul{list-style: none;}
 a:link, a:visited, a:hover, a:active{color: inherit;text-decoration: none;}
@@ -55,6 +59,12 @@ header, nav, section, article, footer{display: block;}
 .blind{position: absolute;top: 0;left: -9999px;text-indent: -9999px;}
 .border_box{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .txt_right{text-align: right;}
+
+body{font-family: s-core;font-weight: 300;font-size:18px;color: #555;letter-spacing: 4px;}
+
+/* skip navigation  */
+#skip a{position: absolute;top: 0;left: -9999px;z-index:1000;}
+#skip a:focus{left: 0;width: 100%;height: 50px;line-height: 50px;text-align: center;background: #ffb400;color: #333;font-weight: 600;}
 
 /* header */
 button{margin: 0;padding: 0;border: none;background: none;cursor: pointer;}
@@ -75,12 +85,6 @@ button{margin: 0;padding: 0;border: none;background: none;cursor: pointer;}
 
 /* index header 1)mainHeader 로고만 존재 */
 #header{display: none;position: absolute;top: -76px;z-index: 500;}
-
-/* skip navigation  */
-#skip a{position: absolute;top: 0;left: -9999px;z-index: 9999;}
-#skip a:focus{left: 0;width: 100%;height: 50px;line-height: 50px;text-align: center;background: #ffb400;color: #333;font-weight: 600;}
-
-body{font-family: s-core;font-weight: 300;font-size:18px;color: #555;letter-spacing: 4px;}
 
 /* header */
 .headerwrap{position:fixed;top:0;left:0;width:100%;overflow: hidden;z-index:8888;transition:top 0.6s;}
