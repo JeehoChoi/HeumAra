@@ -1,9 +1,9 @@
 @charset "utf-8";
 /* culture page */
-#cultureBg{position: relative;width: 100%;min-height: 100vh;height: 100%;background: url("../images/culture/culture_bg.jpg") no-repeat center top;}
-#cultureBg h2{position: absolute;width: 1090px;height: 256px;line-height: 270px;top: 540px;right: 0;font-family: calDream;font-size: 150px;letter-spacing: 30px;color: #ED9C63;font-weight: 400;background: rgba(47, 51, 45, 0.7);padding-left: 50px;}
+#cultureBg{position: relative;width: 100%;min-height: 100vh;height: 100%;background: url("../images/culture/culture_bg.jpg") no-repeat center top;background-size: cover;}
+#cultureBg h2{position: absolute;line-height: 260px;right: 0;font-family: calDream;font-size: 150px;letter-spacing: 30px;color: #ED9C63;font-weight: 400;background: rgba(47, 51, 45, 0.7);padding: 0px 150px 0px 50px;bottom: 150px;}
 
-#content{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;min-width: 1400px;max-width: 1920px;margin: 0 auto;}
+#content{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;min-width: 1400px;margin: 0 auto;}
 #exhibition, #performance, #movie{width: 100%;min-height: 100vh;height: 100%;}
 
 /* 공통 클래스 */
@@ -75,7 +75,7 @@ alt에 필요없는 문자 지우기
 */
 
 /* exhibition */
-#exhibitBg{position: relative;width: 100%;height: 500px;background: url("../images/exhibition/exhibition_bg.jpg") no-repeat center top;}
+#exhibitBg{position: relative;width: 100%;height: 500px;background: url("../images/exhibition/exhibition_bg.jpg") no-repeat center top;background-size: cover;}
 #exhibitBg h2{position: absolute;width: 100%;height: 250px;line-height: 250px;bottom: 0;left: 0;font-family: CaviarDreams;font-size: 100px;letter-spacing: 30px;text-align: center;color: #ED9C63;font-weight: 400;background: rgba(47, 51, 45, 0.6);}
 
 #exhibitTab{overflow: hidden;}
